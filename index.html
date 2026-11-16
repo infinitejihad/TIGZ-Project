@@ -114,6 +114,52 @@ td .art{width:46px;padding:6px;border-radius:8px}
 section{padding:44px 0}.promo{padding:26px}.f2{grid-template-columns:1fr}}
 @media(max-width:560px){.grid{grid-template-columns:repeat(2,1fr);gap:12px}.pb{padding:11px}.pb h3{font-size:15px}.pb .price b{font-size:17px}.cats{grid-template-columns:1fr}.pb .btn{padding:9px 6px;font-size:13px}.stats{grid-template-columns:1fr 1fr}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* Phase 1: premium storefront visual layer. Existing interactions remain intact. */
+:root{--bg:#f7f8f6;--bg2:#fff;--card:#fff;--line:#e6ebe5;--tx:#18231c;--mut:#68746b;--gold:#126c3c;--gold2:#084b2a;--choc:#edf4ee}
+body{font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1220px;padding-left:clamp(18px,3.2vw,38px);padding-right:clamp(18px,3.2vw,38px)}
+header{background:rgba(255,255,255,.96);box-shadow:0 8px 30px rgba(20,45,26,.035)}
+.hd{height:78px;gap:24px}.brand{font-size:13px;letter-spacing:.065em}.brand img,.brand svg{width:40px;height:40px}
+nav.main{gap:30px;font-size:13px}nav.main a{transition:color .2s}
+.search{background:#f6f8f5;border-color:#edf0eb;border-radius:999px;padding:11px 17px;width:215px;font-size:13px}
+.btn{border-radius:999px;padding:13px 24px;box-shadow:0 5px 16px rgba(9,84,42,.1);transition:transform .2s,box-shadow .2s,filter .2s}
+.btn:hover{box-shadow:0 10px 24px rgba(9,84,42,.16)}
+.btn.ghost{box-shadow:none;background:#fff9}
+section{padding:76px 0}.eyebrow{font-size:11px;letter-spacing:.18em}
+.sh{margin-bottom:30px}.sh h2{font-size:clamp(29px,3.3vw,43px);letter-spacing:-.045em;line-height:1.15}
+.sh p{max-width:580px}.vall{font-size:13px}
+.hero{background:linear-gradient(115deg,#e9f2e9 0%,#f8f8f2 58%,#f2f4ee 100%)}
+.slides{min-height:540px}.slide{gap:clamp(30px,5vw,85px)}.slide h1{font-size:clamp(42px,5.7vw,76px);letter-spacing:-.065em;line-height:1.04;max-width:630px}
+.slide p{font-size:16px;line-height:1.8;max-width:440px}.slide .price{margin:25px 0}
+.slide .art{max-width:440px;border-radius:36px;background:radial-gradient(circle at 45% 32%,#fff,#e2ebe0 75%);box-shadow:0 28px 65px rgba(37,66,40,.11)}
+.slide .art svg{filter:drop-shadow(0 24px 20px rgba(0,0,0,.15))}
+.ctl{bottom:23px}.arr{box-shadow:0 4px 12px rgba(0,0,0,.04)}
+.cats{gap:18px}.cat{min-height:170px;border-radius:20px;border-color:#e7ede6;box-shadow:0 8px 25px rgba(20,40,20,.025)}
+.cat .txt{padding:24px}.cat b{font-size:17px}.cat span{font-size:12px}
+.cat .art{background:linear-gradient(140deg,#f3f7f1,#e8f0e8)}
+#col{background:#fff}.tabs{gap:9px;margin-bottom:28px}.tab{font-size:13px;padding:10px 18px;border-color:#e5eae3}
+.grid{gap:20px}.pc{border-radius:20px;border-color:#e8ece7;box-shadow:0 5px 25px rgba(20,35,22,.025)}
+.pc:hover{box-shadow:0 20px 42px rgba(20,35,22,.09)}
+.pc .art{background:radial-gradient(circle at 50% 32%,#f8faf6,#e9eee8 90%)}
+.pb{padding:20px;gap:8px}.pb small{text-transform:uppercase;letter-spacing:.09em;font-size:10px}
+.pb h3{font-size:17px;line-height:1.35}.pb .price{margin:5px 0 12px}
+.pc .sale{border-radius:999px}.pc .btn{width:100%}
+.promo{border-radius:28px}.cta{background:linear-gradient(130deg,#e9f3e9,#f7f9f3)}
+.tigz-benefits{background:#fff;padding:23px 0;border-bottom:1px solid var(--line)}
+.tigz-benefits-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.tigz-benefit{display:flex;align-items:center;gap:13px;padding:8px 14px}
+.tigz-benefit-icon{width:42px;height:42px;flex:none;border-radius:13px;display:grid;place-items:center;background:#edf5ed;color:#176b3b;font-size:21px}
+.tigz-benefit strong{display:block;font-size:13px;line-height:1.4}.tigz-benefit span:last-child{display:block;color:var(--mut);font-size:12px}
+@media(max-width:960px){.hd{gap:12px}nav.main{gap:15px}.search{width:160px}.tigz-benefits-grid{gap:8px}}
+@media(max-width:760px){.hd{height:auto;padding-top:12px;padding-bottom:12px}.brand span{display:inline;font-size:11px}.brand img,.brand svg{width:32px;height:32px}
+nav.main{overflow-x:auto;justify-content:flex-start;gap:22px;padding:5px 0;white-space:nowrap;scrollbar-width:none}.search{width:min(35vw,160px)}
+.slides{min-height:690px}.slide{gap:10px;padding:28px 0 65px;align-content:center}.slide h1{font-size:clamp(36px,9vw,54px);margin:8px 0 14px}.slide p{font-size:14px}
+.slide .art{max-width:250px;border-radius:24px}.slide .price{margin:14px 0}.slide .price b{font-size:24px}
+section{padding:52px 0}.tigz-benefits-grid{grid-template-columns:1fr;gap:0}.tigz-benefits{padding:9px 0}.tigz-benefit{padding:10px 0}
+}
+@media(max-width:560px){.grid{gap:12px}.pc{border-radius:15px}.pb{padding:12px;gap:5px}.pb h3{font-size:14px}.pb .price b{font-size:17px}.pc .btn{font-size:12px;padding:10px 6px}.cat{min-height:130px}.cat .txt{padding:17px}}
+
 </style>
 </head>
 <body>
@@ -163,7 +209,7 @@ function grid(list){return list.length?`<div class="grid">${list.map(card).join(
 function tabs(){return `<div class="tabs">${[['all','All products'],...CATS.map(c=>[c[0],c[1]])].map(t=>`<button class="tab ${flt==t[0]?'on':''}" data-a="flt" data-id="${t[0]}">${t[1]}</button>`).join('')}</div>`}
 const fl=()=>S.products.filter(p=>flt=='all'||p.category==flt);
 function home(){const f=S.products.filter(p=>p.featured)[0]||S.products[0];
-return hero()+`<section id="cats"><div class="wrap"><div class="sh shr"><div><span class="eyebrow">Discover your next favorite</span><h2>Shop by category</h2></div><a href="#/categories" class="vall">View all →</a></div><div class="cats">${CATS.map(c=>{const p=S.products.find(x=>x.category==c[0])||{category:c[0],colors:[],name:c[1],images:[]};return `<a class="cat" href="#/products/${c[0]}"><div class="txt"><b>${c[2]} ${c[1]}</b><span>Explore →</span></div>${art(p)}</a>`}).join('')}</div></div></section>
+return hero()+`<section class="tigz-benefits" aria-label="Shopping benefits"><div class="wrap tigz-benefits-grid"><div class="tigz-benefit"><span class="tigz-benefit-icon" aria-hidden="true">✓</span><div><strong>Easy ordering</strong><span>Shop your favorite gadgets in minutes</span></div></div><div class="tigz-benefit"><span class="tigz-benefit-icon" aria-hidden="true">৳</span><div><strong>Cash on delivery</strong><span>Convenient checkout across Bangladesh</span></div></div><div class="tigz-benefit"><span class="tigz-benefit-icon" aria-hidden="true">↗</span><div><strong>Order tracking</strong><span>Follow your order status anytime</span></div></div></div></section><section id="cats"><div class="wrap"><div class="sh shr"><div><span class="eyebrow">Discover your next favorite</span><h2>Shop by category</h2></div><a href="#/categories" class="vall">View all →</a></div><div class="cats">${CATS.map(c=>{const p=S.products.find(x=>x.category==c[0])||{category:c[0],colors:[],name:c[1],images:[]};return `<a class="cat" href="#/products/${c[0]}"><div class="txt"><b>${c[2]} ${c[1]}</b><span>Explore →</span></div>${art(p)}</a>`}).join('')}</div></div></section>
 <section id="col"><div class="wrap"><div class="sh"><span class="eyebrow">The TIGZ collection</span><h2>The right gadgets, all in one place.</h2><p>Find the tech you need for music, entertainment and everyday life.</p></div>${tabs()}<div id="pg">${grid(fl())}</div></div></section>
 <section id="feat"><div class="wrap"><div class="promo"><div><span class="eyebrow">Featured</span><h2>${esc(f.name)}</h2><div class="price"><b>${money(f.price)}</b><span class="old">${money(f.oldPrice)}</span><span class="sale">SALE −${f.discount}%</span></div><a class="btn" href="#/product/${f.slug}">Shop now →</a></div>${art(f)}</div></div></section>
 <section class="cta"><div class="wrap"><h2>Smart Gadgets. Better Life.</h2><p>Cash on delivery across Bangladesh. Track every order from confirmation to your door.</p><a class="btn" href="#/products">Explore products →</a></div></section>`}
